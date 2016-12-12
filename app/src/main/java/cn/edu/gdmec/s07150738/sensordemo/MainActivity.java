@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         tOrientation = (TextView)this.findViewById(R.id.orientation);
         tLight = (TextView)this.findViewById(R.id.light);
         //获得传感器管理器
-        mSensorManager = (SensorManager)getSystemService(SEARCH_SERVICE);
+        mSensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
         //获得加速度传感器
         mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         //获得方向度传感器
